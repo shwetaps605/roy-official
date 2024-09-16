@@ -1,12 +1,11 @@
-import { Button } from "../components/ui/button";
+import Hero from "@/components/hero";
 
 export default function Home() {
   return (
-    <section className="py-24">
-      <div className="container">
-        <h1 className="text-3xl font-bold">Hi, I am Shweta</h1>
-        <Button/>
+    <main className="py-24 relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+      <div className="max-w-7xl w-full">
+        <Hero/>
       </div>
-    </section>
+    </main>
   );
 }
