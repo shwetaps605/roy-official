@@ -14,7 +14,7 @@ export function FeaturesSectionDemo() {
       title: "I'm always on the go.",
       description:
         "I am always up for learning new tech and also love writing about it",
-      skeleton: <SkeletonOne />,
+      skeleton: <SkeletonThree />,
       className:
         "col-span-1 lg:col-span-4 border-b lg:border-r border-neutral-800",
     },
@@ -24,22 +24,7 @@ export function FeaturesSectionDemo() {
         "I love playing around in Figma to create beautiful and thoughtful designs.",
       skeleton: <SkeletonTwo />,
       className: "border-b col-span-1 lg:col-span-2 dark:border-neutral-800",
-    },
-    {
-      title: "I am a builder.",
-      description:
-        "I build side-projects to upskill myself while having fun.",
-      skeleton: <SkeletonThree />,
-      className:
-        "col-span-1 lg:col-span-3 lg:border-r  dark:border-neutral-800",
-    },
-    {
-      title: "Deploy in seconds",
-      description:
-        "With our blazing fast, state of the art, cutting edge, we are so back cloud servies (read AWS) - you can deploy your model in seconds.",
-      skeleton: <SkeletonFour />,
-      className: "col-span-1 lg:col-span-3 border-b lg:border-none",
-    },
+    }
   ];
   return (
     <div className="relative max-w-7xl mx-auto min-h-screen">
@@ -55,7 +40,7 @@ export function FeaturesSectionDemo() {
       </div> */}
 
       <div className="relative ">
-        <div className="grid grid-cols-1 lg:grid-cols-6 mt-12 xl:border rounded-md border-neutral-800">
+        <div className="grid grid-cols-1 lg:grid-cols-6 mt-12 xl:border rounded-md border-neutral-600">
           {features.map((feature) => (
             <FeatureCard key={feature.title} className={feature.className}>
               <FeatureTitle>{feature.title}</FeatureTitle>
@@ -135,10 +120,8 @@ export const SkeletonThree = () => {
       className="relative flex gap-10 h-full group/image"
     >
       <div className="w-full mx-auto bg-transparent group h-full">
-        <div className="flex flex-1 w-full h-full flex-col space-y-2 relative">
-        <div className="h-[25rem] flex items-center justify-center w-full">
+        <div className="h-full flex items-center justify-center w-full border">
           <CardStack items={CARDS} />
-        </div>
         </div>
       </div>
     </Link>
