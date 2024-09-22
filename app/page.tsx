@@ -1,5 +1,5 @@
 import Hero from "@/components/hero";
-import Skills from "@/components/skills";
+import Projects from "@/components/projects";
 import { FeaturesSectionDemo } from "@/components/ui/feature-section";
 
 export default function Home() {
@@ -7,8 +7,8 @@ export default function Home() {
     <main className="py-24 relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <div className="max-w-7xl w-full">
         <Hero/>
-        {/* <Skills/> */}
         <FeaturesSectionDemo/>
+        <Projects/>
       </div>
     </main>
   );

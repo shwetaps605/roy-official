@@ -40,7 +40,7 @@ export function FeaturesSectionDemo() {
       </div> */}
 
       <div className="relative ">
-        <div className="grid grid-cols-1 lg:grid-cols-6 mt-12 xl:border rounded-md border-neutral-600">
+        <div className="grid grid-cols-1 lg:grid-cols-6 mt-12 xl:border rounded-md border-neutral-400">
           {features.map((feature) => (
             <FeatureCard key={feature.title} className={feature.className}>
               <FeatureTitle>{feature.title}</FeatureTitle>
@@ -70,7 +70,7 @@ const FeatureCard = ({
 
 const FeatureTitle = ({ children }: { children?: React.ReactNode }) => {
   return (
-    <p className=" max-w-5xl mx-auto text-left tracking-tight text-purple-200 text-xl md:text-2xl md:leading-snug">
+    <p className=" max-w-5xl mx-auto text-left tracking-tight text-emerald-500 text-xl md:text-2xl md:leading-snug">
       {children}
     </p>
   );
@@ -147,7 +147,7 @@ export const SkeletonTwo = () => {
     },
   };
   return (
-    <div className="relative flex flex-col items-start p-8 gap-10 h-full overflow-hidden">
+    <div className="relative flex flex-col items-start p-8 gap-10 h-full overflow-hidden ">
       {/* TODO */}
       <div className="flex flex-row -ml-20">
         {images.map((image, idx) => (
@@ -159,7 +159,7 @@ export const SkeletonTwo = () => {
             }}
             whileHover="whileHover"
             whileTap="whileTap"
-            className="rounded-xl -mr-4 mt-4 p-1  bg-neutral-800 border border-neutral-100 flex-shrink-0 overflow-hidden"
+            className="rounded-xl -mr-4 mt-4 p-1 bg-transparent flex-shrink-0 overflow-hidden"
           >
             <Image
               src={image}
@@ -181,7 +181,7 @@ export const SkeletonTwo = () => {
             variants={imageVariants}
             whileHover="whileHover"
             whileTap="whileTap"
-            className="rounded-xl -mr-4 mt-4 p-1 bg-neutral-800 border border-neutral-100 flex-shrink-0 overflow-hidden"
+            className="rounded-xl -mr-4 mt-4 p-1 bg-transparent flex-shrink-0 overflow-hidden"
           >
             <Image
               src={image}
@@ -194,8 +194,8 @@ export const SkeletonTwo = () => {
         ))}
       </div>
 
-      {/* <div className="absolute left-0 z-[100] inset-y-0 w-20 bg-gradient-to-r  from-black to-transparent  h-full pointer-events-none" />
-      <div className="absolute right-0 z-[100] inset-y-0 w-20 bg-gradient-to-l  from-black  to-transparent h-full pointer-events-none" /> */}
+      <div className="absolute left-0 z-[100] inset-y-0 w-20 bg-gradient-to-r  from-black-100 to-transparent  h-full pointer-events-none" />
+      <div className="absolute right-0 z-[100] inset-y-0 w-20 bg-gradient-to-l  from-black-100  to-transparent h-full pointer-events-none" />
     </div>
   );
 };
