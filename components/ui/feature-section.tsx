@@ -14,7 +14,7 @@ export function FeaturesSectionDemo() {
       title: "I'm always on the go.",
       description:
         "I am always up for learning new tech and also love writing about it",
-      skeleton: <SkeletonThree />,
+      skeleton: <SkeletonOne />,
       className:
         "col-span-1 lg:col-span-4 border-b lg:border-r border-neutral-800",
     },
@@ -94,7 +94,7 @@ export const SkeletonOne = () => {
   return (
     <div className="relative flex py-8 px-2 gap-10 h-full">
       <Button>View blog</Button>
-      {/* <div className="w-full p-5 mx-auto shadow-lg group h-full">
+      <div className="w-full p-5 mx-auto shadow-lg group h-full">
         <div className="flex flex-1 w-full h-full flex-col space-y-2  ">
           <Image
             src="/blog.png"
@@ -105,7 +105,7 @@ export const SkeletonOne = () => {
           />
           <Button>View blog</Button>
         </div>
-      </div> */}
+      </div>
       {/* <div className="absolute bottom-0 z-40 inset-x-0 h-60 bg-gradient-to-t from-black  via-black to-transparent w-full pointer-events-none" />
       <div className="absolute top-0 z-40 inset-x-0 h-60 bg-gradient-to-b from-black via-transparent to-transparent w-full pointer-events-none" /> */}
     </div>
@@ -114,14 +114,10 @@ export const SkeletonOne = () => {
 
 export const SkeletonThree = () => {
   return (
-    <Link
-      href="https://devroy.hashnode.dev/"
-      target="__blank"
-      className="relative flex gap-10 h-full group/image"
-    >
+    <Link href="https://devroy.hashnode.dev/" target="__blank" className="relative flex gap-10 h-full group/image">
       <div className="w-full mx-auto bg-transparent group h-full">
-        <div className="h-full flex items-center justify-center w-full border">
-          <CardStack items={CARDS} />
+        <div className="h-full flex items-center justify-center w-full">
+          {/* <CardStack items={CARDS} /> */}
         </div>
       </div>
     </Link>
@@ -204,12 +200,12 @@ export const SkeletonTwo = () => {
   );
 };
 
-export const SkeletonFour = () => {
-  return (
-    <div className="h-60 md:h-60  flex flex-col items-center relative bg-transparent dark:bg-transparent mt-10">
-    </div>
-  );
-};
+// export const SkeletonFour = () => {
+//   return (
+//     <div className="h-60 md:h-60  flex flex-col items-center relative bg-transparent">
+//     </div>
+//   );
+// };
 
 const CARDS = [
   {
@@ -218,12 +214,12 @@ const CARDS = [
     designation: "Senior Software Engineer",
     content: (
       <Image
-            src="/blog.png"
-            alt="header"
-            width={200}
-            height={200}
-            className="h-[200] w-[200] aspect-auto object-cover rounded-sm"
-          />
+        src="/blog.png"
+        alt="header"
+        width={200}
+        height={200}
+        className="h-[200] w-[200] aspect-auto object-cover rounded-sm"
+      />
     ),
   },
   {
