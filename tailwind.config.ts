@@ -1,10 +1,5 @@
 import type { Config } from "tailwindcss";
-
-
 import svgToDataUri from "mini-svg-data-uri"; 
-
-// import defaultTheme from "tailwindcss/defaultTheme";
-// import colors from "tailwindcss/colors";
 import { default as flattenColorPalette } from "tailwindcss/lib/util/flattenColorPalette";
 
 const config: Config = {
@@ -114,11 +109,10 @@ const config: Config = {
 
 // This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).
 function addVariablesForColors({ addBase, theme }: any) {
-	let allColors = flattenColorPalette(theme("colors"));
-	let newVars = Object.fromEntries(
+	const allColors = flattenColorPalette(theme("colors"));
+	const newVars = Object.fromEntries(
 	  Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
 	);
-   
 	addBase({
 	  ":root": newVars,
 	});

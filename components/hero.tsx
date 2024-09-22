@@ -1,13 +1,15 @@
+'use client'
 import React from 'react'
 import { Spotlight } from './ui/Spotlight'
-import { FlipWords } from './ui/flip-words';
 import Image from 'next/image';
+import { FaLinkedin } from "react-icons/fa";
 
+import { CiLinkedin } from "react-icons/ci";
 const Hero = () => {
-  const words = ["JavaScript", "dosa", "animes", "books"];
+  const fontStyles = {color: 'text-neutral-300', fontSize: '40px'};
 
   return (
-    <div className='pb-20 pt-20 min-h-screen'>
+    <div className='pb-20 pt-20 min-h-[90%]'>
         <div>
             <Spotlight className='-top-40 -left-10 md:-left-32 md:-top-20 h-screen' fill='white'/>
             <Spotlight className='top-10 left-full h-[80vh] w-[50vw]' fill='purple'/>
@@ -18,7 +20,8 @@ const Hero = () => {
 
             <div className='flex justify-center relative flex-col items-center w-full gap-30 sm:gap-10'>
 
-              <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[80vw] flex flex-row sm:felx-col items-center justify-between gap-20 sm:gap-10'>
+              <div className=' h-[100%] max-w-[89vw] md:max-w-2xl lg:max-w-[80vw] flex flex-row items-center justify-between gap-20 sm:gap-10 py-5'>
+                
                 <div className='mt-5 rounded-full'>
                     <Image
                       src="/profile.jpeg"
@@ -31,12 +34,25 @@ const Hero = () => {
 
                 <div className='max-w-[70vw] sm:w-full text-center'>
                   {/* <h2 className='uppercase tracking-widest text-lg sm:text-xs  text-white'>Hajimashite!</h2> */}
-                  <p className='text-[5rem] text-teal-100 mt-3'>Hi, I am Shweta!</p>
-                  <p className='text-purple-100 text-2xl mt-5'>I am frontend developer on a creative pursuit to craft 
-                    <span className='font-semibold text-pink-300'>pixel-perfect</span>, <span className='font-semibold text-pink-300'>user obssessed</span> and 
-                    <span className='font-semibold text-pink-300'>high quality</span> web applications.
+                  <p className='text-[5rem] text-emerald-500 mt-5 font-semibold'>Hi, I am Shweta!</p>
+                  <p className='text-neutral-300 text-2xl mt-5'>I am a full-stack developer with a primary focus on frontend development. I am driven by the passion to create
+                    <span className='font-semibold text-pink-300'> pixel-perfect</span>, <span className='font-semibold text-pink-300'> user obssessed</span> and 
+                    <span className='font-semibold text-pink-300'> high quality</span> web applications.
                   </p>
                 </div>
+
+                <div className='min-h-[90%] flex flex-col justify-between gap-5 items-center '>
+                  <button className='border'>
+                    <CiLinkedin style={fontStyles}/>
+                  </button>
+                  <button className='border'>
+                    <CiLinkedin style={fontStyles}/>
+                  </button>
+                  <button className='border'>
+                    <CiLinkedin style={fontStyles}/>
+                  </button>
+                </div>
+
               </div>
 
               <div>
