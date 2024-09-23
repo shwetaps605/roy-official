@@ -2,10 +2,8 @@
 import React from "react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import { IconBrandYoutubeFilled } from "@tabler/icons-react";
 import Link from "next/link";
 import { motion } from "framer-motion"
-import { CardStack } from "./card-stack";
 import { Button } from "./button";
 
 export function FeaturesSectionDemo() {
@@ -80,7 +78,7 @@ const FeatureDescription = ({ children }: { children?: React.ReactNode }) => {
   return (
     <p
       className={cn(
-        "text-sm md:text-base  max-w-4xl text-left mx-auto",
+        "text-lg md:text-base  max-w-4xl text-left mx-auto",
         "text-center font-normal text-neutral-300",
         "text-left max-w-sm mx-0 md:text-sm my-2"
       )}
