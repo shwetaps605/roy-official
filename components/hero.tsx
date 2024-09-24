@@ -41,7 +41,7 @@ const Hero = () => {
                   </p>
                 </div>
 
-                <div className='min-h-[90%] flex flex-col justify-between gap-5 items-center '>
+                {/* <div className='min-h-[90%] flex flex-col justify-between gap-5 items-center '>
                   <button className='border'>
                     <CiLinkedin style={fontStyles}/>
                   </button>
@@ -51,7 +51,7 @@ const Hero = () => {
                   <button className='border'>
                     <CiLinkedin style={fontStyles}/>
                   </button>
-                </div>
+                </div> */}
 
               </div>
 
