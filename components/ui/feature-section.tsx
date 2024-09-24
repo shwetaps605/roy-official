@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion"
-import { Button } from "./button";
+import SkillTile from "../SkillTile";
 
 export function FeaturesSectionDemo() {
   const features = [
@@ -21,7 +21,7 @@ export function FeaturesSectionDemo() {
       description:
         "I love playing around in Figma to create beautiful and thoughtful designs.",
       skeleton: <SkeletonTwo />,
-      className: "border-b col-span-1 lg:col-span-2 dark:border-neutral-800",
+      className: "border-b col-span-1 lg:col-span-2 border-neutral-800",
     }
   ];
   return (
@@ -52,13 +52,7 @@ export function FeaturesSectionDemo() {
   );
 }
 
-const FeatureCard = ({
-  children,
-  className,
-}: {
-  children?: React.ReactNode;
-  className?: string;
-}) => {
+const FeatureCard = ({children,className,}: {children?: React.ReactNode;className?: string;}) => {
   return (
     <div className={cn(`p-4 sm:p-8 relative overflow-hidden`, className)}>
       {children}
@@ -78,7 +72,7 @@ const FeatureDescription = ({ children }: { children?: React.ReactNode }) => {
   return (
     <p
       className={cn(
-        "text-lg md:text-base  max-w-4xl text-left mx-auto",
+        "text-lg md:text-base max-w-4xl text-left mx-auto",
         "text-center font-normal text-neutral-300",
         "text-left max-w-sm mx-0 md:text-sm my-2"
       )}
@@ -90,23 +84,37 @@ const FeatureDescription = ({ children }: { children?: React.ReactNode }) => {
 
 export const SkeletonOne = () => {
   return (
-    <div className="relative flex py-8 px-2 gap-10 h-full">
-      <Button>View blog</Button>
-      <div className="w-full p-5 mx-auto shadow-lg group h-full">
-        <div className="flex flex-1 w-full h-full flex-col space-y-2  ">
-          <Image
-            src="/blog.png"
-            alt="header"
-            width={800}
-            height={800}
-            className="h-[200] w-[200] aspect-auto object-cover rounded-sm"
-          />
-          <Button>View blog</Button>
+      <div className="w-full mx-auto shadow-lg group h-full">
+        <div className=" mt-5 grid grid-cols-[1fr,1fr,1fr,1fr] w-full justify-center gap-x-5 gap-y-3">
+         <SkillTile>
+           <p>Angular</p>
+         </SkillTile>
+         <SkillTile>
+           <p>React</p>
+         </SkillTile>
+         <SkillTile>
+           <p>Redux</p>
+         </SkillTile>
+         <SkillTile>
+           <p>NextJS</p>
+         </SkillTile>
+         <SkillTile>
+           <p>HTML5</p>
+         </SkillTile>
+         <SkillTile>
+           <p>JavaScript</p>
+         </SkillTile>
+         <SkillTile>
+           <p>TypeScript</p>
+         </SkillTile>
+         <SkillTile>
+           <p>Sass/CSS</p>
+         </SkillTile>
+         <SkillTile>
+           <p>TailwindCSS</p>
+         </SkillTile>
         </div>
       </div>
-      {/* <div className="absolute bottom-0 z-40 inset-x-0 h-60 bg-gradient-to-t from-black  via-black to-transparent w-full pointer-events-none" />
-      <div className="absolute top-0 z-40 inset-x-0 h-60 bg-gradient-to-b from-black via-transparent to-transparent w-full pointer-events-none" /> */}
-    </div>
   );
 };
 
@@ -197,48 +205,4 @@ export const SkeletonTwo = () => {
     </div>
   );
 };
-
-// export const SkeletonFour = () => {
-//   return (
-//     <div className="h-60 md:h-60  flex flex-col items-center relative bg-transparent">
-//     </div>
-//   );
-// };
-
-const CARDS = [
-  {
-    id: 0,
-    name: "Manu Arora",
-    designation: "Senior Software Engineer",
-    content: (
-      <Image
-        src="/blog.png"
-        alt="header"
-        width={200}
-        height={200}
-        className="h-[200] w-[200] aspect-auto object-cover rounded-sm"
-      />
-    ),
-  },
-  {
-    id: 1,
-    name: "Elon Musk",
-    designation: "Senior Shitposter",
-    content: (
-      <p>
-        
-      </p>
-    ),
-  },
-  {
-    id: 2,
-    name: "Tyler Durden",
-    designation: "Manager Project Mayhem",
-    content: (
-      <p>
-        
-      </p>
-    ),
-  },
-];
 
