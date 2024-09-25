@@ -2,12 +2,8 @@
 import React from 'react'
 import { Spotlight } from './ui/Spotlight'
 import Image from 'next/image';
-import { FaLinkedin } from "react-icons/fa";
 
-import { CiLinkedin } from "react-icons/ci";
 const Hero = () => {
-  const fontStyles = {color: 'text-neutral-300', fontSize: '40px'};
-
   return (
     <div className='pb-20 pt-20 min-h-[90%]'>
         <div>
@@ -40,18 +36,6 @@ const Hero = () => {
                     <span className='font-semibold text-pink-300'> high quality</span> web applications.
                   </p>
                 </div>
-
-                {/* <div className='min-h-[90%] flex flex-col justify-between gap-5 items-center '>
-                  <button className='border'>
-                    <CiLinkedin style={fontStyles}/>
-                  </button>
-                  <button className='border'>
-                    <CiLinkedin style={fontStyles}/>
-                  </button>
-                  <button className='border'>
-                    <CiLinkedin style={fontStyles}/>
-                  </button>
-                </div> */}
 
               </div>
 
