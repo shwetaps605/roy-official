@@ -26,17 +26,6 @@ export function FeaturesSectionDemo() {
   ];
   return (
     <div className="relative max-w-7xl mx-auto min-h-screen">
-      {/* <div className="px-8">
-        <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium  text-white">
-          Packed with thousands of features
-        </h4>
-
-        <p className="text-sm lg:text-base  max-w-2xl  my-4 mx-auto  text-center font-normal text-neutral-300">
-          From Image generation to video generation, Everything AI has APIs for
-          literally everything. It can even create this website copy for you.
-        </p>
-      </div> */}
-
       <div className="relative ">
         <div className="grid grid-cols-1 lg:grid-cols-6 mt-12 xl:border rounded-md border-neutral-400">
           {features.map((feature) => (
