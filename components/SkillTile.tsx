@@ -2,7 +2,7 @@ import React from 'react'
 
 const SkillTile = ({children}:{children?: React.ReactNode}) => {
   return (
-    <div className='bg-slate-800 px-3 py-3 text-emerald-600 rounded-md shadow-lg'>
+    <div className='bg-slate-800 px-3 py-3 text-emerald-600 rounded-md shadow-lg hover:shadow-black hover:shadow-2xl hover:text-neutral-400 hover:border-2 hover:border-slate-500'>
         {children}
     </div>
   )
