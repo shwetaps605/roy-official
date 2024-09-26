@@ -25,7 +25,7 @@ export function FeaturesSectionDemo() {
     }
   ];
   return (
-    <div className="relative max-w-7xl mx-auto min-h-screen">
+    <div className="relative max-w-7xl mx-auto mt-5">
       <div className="relative ">
         <div className="grid grid-cols-1 lg:grid-cols-6 mt-12 xl:border rounded-md border-neutral-400">
           {features.map((feature) => (

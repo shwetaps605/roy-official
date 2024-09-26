@@ -1,6 +1,9 @@
+import Blog from "@/components/Blog";
+import Footer from "@/components/footer";
 import Hero from "@/components/hero";
 import Projects from "@/components/projects";
 import { FeaturesSectionDemo } from "@/components/ui/feature-section";
+import WorkSection from "@/components/WorkSection";
 
 export default function Home() {
   return (
@@ -8,7 +11,10 @@ export default function Home() {
       <div className="max-w-7xl w-full">
         <Hero/>
         <FeaturesSectionDemo/>
+        <Blog/>
         <Projects/>
+        <WorkSection/>
+        <Footer/>
       </div>
     </main>
   );

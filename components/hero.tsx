@@ -30,10 +30,10 @@ const Hero = () => {
 
                 <div className='max-w-[70vw] sm:w-full text-center'>
                   {/* <h2 className='uppercase tracking-widest text-lg sm:text-xs  text-white'>Hajimashite!</h2> */}
-                  <p className='text-[5rem] text-emerald-500 mt-5 font-semibold'>Hi, I am Shweta!</p>
+                  <p className='text-[5rem] text-emerald-600 mt-5 font-semibold'>Hi, I am Shweta!</p>
                   <p className='text-neutral-300 text-2xl mt-5'>I am a full-stack developer with a primary focus on frontend development. I am driven by the passion to create
-                    <span className='font-semibold text-pink-300'> pixel-perfect</span>, <span className='font-semibold text-pink-300'> user obssessed</span> and 
-                    <span className='font-semibold text-pink-300'> high quality</span> web applications.
+                    <span className='font-semibold text-amber-400'> pixel-perfect</span>, <span className='font-semibold text-amber-400'> user obssessed</span> and 
+                    <span className='font-semibold text-amber-400'> high quality</span> web applications.
                   </p>
                 </div>
 
