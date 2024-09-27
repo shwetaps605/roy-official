@@ -51,7 +51,7 @@ const FeatureCard = ({children,className,}: {children?: React.ReactNode;classNam
 
 const FeatureTitle = ({ children }: { children?: React.ReactNode }) => {
   return (
-    <p className=" max-w-5xl mx-auto text-left tracking-tight text-emerald-500 text-xl md:text-2xl md:leading-snug">
+    <p className=" max-w-5xl mx-auto text-left tracking-tight text-emerald-500 md:text-2xl text-xl md:leading-snug">
       {children}
     </p>
   );
@@ -63,7 +63,7 @@ const FeatureDescription = ({ children }: { children?: React.ReactNode }) => {
       className={cn(
         "text-lg md:text-base max-w-4xl text-left mx-auto",
         "text-center font-normal text-neutral-300",
-        "text-left max-w-sm mx-0 md:text-sm my-2"
+        "text-left max-w-sm mx-0 md:text-lg my-2"
       )}
     >
       {children}
