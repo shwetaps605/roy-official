@@ -33,14 +33,14 @@ const Projects = () => {
           translateZ="50"
           className="text-xl font-bold  text-white"
         >
-          Make things float in air
+          Wishco: your wishlisted companies
         </CardItem>
         <CardItem
           as="p"
           translateZ="60"
-          className="text-sm max-w-sm mt-2 text-neutral-300"
+          className="text-xs max-w-sm mt-2 text-neutral-300"
         >
-          Hover over this card to unleash the power of CSS perspective
+          An application where users can wishlist their desired companies by pasting the company's LinkedIn url. It fetches the latest reviews and ratings from Glassdoor automatically. Users can also track their job aaplications by adding the application details.
         </CardItem>
         <CardItem translateZ="100" className="w-full mt-4">
           <Image
@@ -51,15 +51,25 @@ const Projects = () => {
             alt="thumbnail"
           />
         </CardItem>
-        <div className="flex justify-between items-center mt-10">
+        <CardItem>
+          <div className='w-full text-emerald-500 px-2 py-2 grid grid-cols-[1fr,1fr,1fr,1fr] gap-2 mt-3'>
+            <div className='text-sm'>Next.js</div>
+            <div className='text-sm'>Typescript</div>
+            <div className='text-sm'>Prisma ORM</div>
+            <div className='text-sm'>Supabase</div>
+            <div className='text-sm'>HTML5</div>
+            <div className='text-sm'>CSS/Sass</div>
+          </div>
+        </CardItem>
+        <div className="flex justify-between items-center mt-5">
           <CardItem
             translateZ={20}
             as={Link}
             href="https://twitter.com/mannupaaji"
             target="__blank"
-            className="px-4 py-2 rounded-xl text-xs font-normal text-emerald-500"
+            className="px-4 py-2 rounded-xl text-xs font-normal text-neutral-400"
           >
-            Try now →
+            Visit →
           </CardItem>
         </div>
       </CardBody>
@@ -71,7 +81,7 @@ const Projects = () => {
           translateZ="50"
           className="text-xl font-bold  text-white"
         >
-          Make things float in air
+          Kallisto: task tracker with pomodoro timer
         </CardItem>
         <CardItem
           as="p"
