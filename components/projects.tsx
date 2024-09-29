@@ -88,7 +88,7 @@ const Projects = () => {
           translateZ="60"
           className="text-sm max-w-sm mt-2 text-neutral-300"
         >
-          Hover over this card to unleash the power of CSS perspective
+          A task tracker application with a pomodoro timer for focused work and breaks.
         </CardItem>
         <CardItem translateZ="100" className="w-full mt-4">
           <Image
