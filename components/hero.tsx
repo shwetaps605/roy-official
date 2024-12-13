@@ -15,10 +15,8 @@ const Hero = () => {
             </div>
 
             <div className='flex justify-center relative flex-col items-center w-full gap-30 sm:gap-10'>
-
-              <div className=' h-[100%] max-w-[89vw] md:max-w-2xl lg:max-w-[80vw] flex flex-row items-center justify-between gap-20 sm:gap-10 py-5'>
-                
-                <div className='mt-5 rounded-full'>
+              <div className='h-full max-w-[89vw] md:max-w-2xl lg:max-w-[80vw] flex flex-row items-center justify-between align-middle gap-20 sm:gap-10 py-5'>
+                <div className='rounded-full  drop-shadow-lg shadow-slate-800'>
                     <Image
                       src="/profile.jpeg"
                       width={400}
@@ -27,22 +25,17 @@ const Hero = () => {
                       className='rounded-full aspect-square object-cover'
                     />
                 </div>
-
                 <div className='max-w-[70vw] sm:w-full text-center'>
-                  {/* <h2 className='uppercase tracking-widest text-lg sm:text-xs  text-white'>Hajimashite!</h2> */}
-                  <p className='text-[5rem] text-emerald-600 mt-5 font-semibold'>Hi, I am Shweta!</p>
-                  <p className='text-neutral-300 text-2xl mt-5'>I am a full-stack developer with a primary focus on frontend development. I am driven by the passion to create
-                    <span className='font-semibold text-amber-400'> pixel-perfect</span>, <span className='font-semibold text-amber-400'> user obssessed</span> and 
-                    <span className='font-semibold text-amber-400'> high quality</span> web applications.
+                  <h2 className='uppercase tracking-widest sm:text-sm  text-gray-400'>Yoroshiku onegaishimasu!</h2>
+                  <p className='text-7xl text-amber-300 mt-5 font-semibold'>Hi, I am Shweta.</p>
+                  <p className='text-gray-300 mt-5 md:text-md text-2xl'>I am a full-stack developer with a primary focus on frontend development. I am driven by the passion to create
+                    <span className='font-semibold text-indigo-500'> pixel-perfect</span>, <span className='font-semibold text-indigo-500'> user obssessed</span> and 
+                    <span className='font-semibold text-indigo-500'> high quality</span> web applications.
                   </p>
                 </div>
-
               </div>
-
               <div>
               </div>
-
-             
             </div>
         </div>
     </div>
