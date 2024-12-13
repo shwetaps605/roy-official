@@ -11,8 +11,8 @@ export default function Home() {
       <div className="max-w-7xl w-full">
         <Hero/>
         <FeatureSection/>
+        <Projects/>
         <Blog/>
-        {/* <Projects/> */}
         <WorkSection/>
         <Footer/>
       </div>

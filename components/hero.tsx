@@ -16,7 +16,7 @@ const Hero = () => {
             </div>
 
             <div className='relative flex flex-col items-center align-middle sm:flex-row sm:gap-20 gap-10 justify-between'>
-              <div className='rounded-full'>
+              <div className='rounded-full hover:shadow-2xl hover:shadow-indigo-400/[0.2] border-white/[0.2] hover:rotate-3'>
                   <Image
                     src="/profile.jpeg"
                     width={400}
@@ -27,7 +27,7 @@ const Hero = () => {
               </div>
               <div className='max-w-[70vw] sm:w-full text-center'>
                 <h2 className='uppercase tracking-widest sm:text-sm  text-gray-400'>Yoroshiku onegaishimasu!</h2>
-                <p className='text-5xl md:text-7xl text-amber-300 mt-5 font-semibold'>Hi, I am Shweta.</p>
+                <p className='text-5xl md:text-7xl text-amber-300 mt-5 font-semibold'> <span></span> I am Shweta.</p>
                 <p className='text-gray-300 mt-5 md:text-md text-2xl'>I am a full-stack developer with a primary focus on frontend development. I am driven by the passion to create
                   <span className='font-semibold text-indigo-500'> pixel-perfect</span>, <span className='font-semibold text-indigo-500'> user obssessed</span> and 
                   <span className='font-semibold text-indigo-500'> high quality</span> web applications.

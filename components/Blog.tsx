@@ -32,16 +32,16 @@ const Blog = () => {
 
   ]
   return (
-    <div className='my-[20rem] justify-center text-center mx-auto max-w-[89vw]'>
+    <div className='my-[20rem] h-full justify-center text-center mx-auto'>
         <h1 className='text-amber-300 text-7xl'>I love to write about tech.</h1>
-        <p className='hover:bg-blue-950 hover:text-white  border-black-100 mx-auto max-w-[25%] px-8 py-3 mt-10 text-3xl text-indigo-400 hover:border-indigo-400 border-2 shadow-md hover:shadow-2xl rounded-md tracking-wide flex flex-row gap-1 justify-center items-center'>
+        <p className='hover:bg-blue-950 hover:text-white  border-black-100 mx-auto max-w-max px-8 py-3 mt-10 text-3xl text-indigo-400 hover:border-indigo-400 border-2 shadow-md hover:shadow-2xl rounded-md tracking-wide flex flex-row gap-1 justify-center items-center'>
             <a className="hover:cursor-pointer" target='_blank' href='https://devroy.hashnode.dev/'>VIEW MY BLOG</a>
             <IoNavigateCircleOutline  />
         </p>
-        <div className='mt-10 items-stretch grid grid-cols-[1fr,1fr,1fr] '>
+        <div className='mt-10 items-stretch grid grid-cols-[1fr,1fr,1fr]  '>
           {
             posts.map(post => (
-              <Card key={post.title} title={post.title} summary={post.summary} postLink={post.postLink} />
+              <Card key={post.title} title={post.title} summary={post.summary} postLink={post.postLink} tags={post.tags} />
             ))
           }
         </div>

@@ -1,7 +1,8 @@
 import React from 'react'
 import Link from "next/link";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
-const Card = ({title, summary, postLink}: {title: string, summary: string, postLink: string}) => {
+import { Post } from './Blog';
+const Card = ({title, summary, postLink, tags}: Post) => {
   return (
    <>
    <CardContainer>
@@ -16,13 +17,20 @@ const Card = ({title, summary, postLink}: {title: string, summary: string, postL
         >
          {summary}
         </CardItem>
+        <CardItem>
+          <div className='flex gap-4 mt-2'>
+            {tags && tags?.map(tag => (
+              <p className='text-sm text-gray-600' key={tag}>#{tag}</p>
+            )) }
+          </div>
+        </CardItem>
         <div className="flex justify-between items-center mt-10">
           <CardItem
             translateZ={20}
             as={Link}
             href={postLink}
             target="__blank"
-            className="py-2 rounded-xl text-sm font-normal text-indigo-400"
+            className="py-2 rounded-xl text-sm font-normal text-indigo-400 hover:text-amber-300"
           >
             Read now →
           </CardItem>
