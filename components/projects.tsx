@@ -1,6 +1,8 @@
 import React from 'react'
 import { InfiniteMovingCards } from './ui/infinite-moving-cards';
 import { IoNavigateCircleOutline } from 'react-icons/io5';
+import Cover from './Cover';
+import Link from 'next/link';
 
 const Projects = () => {
   const testimonials = [
@@ -27,10 +29,14 @@ const Projects = () => {
   ];
   return (
     <div className='my-[20rem] text-center mx-auto'>
-      <h1 className='text-amber-300 text-7xl'>I love to build and tinker.</h1>
-      <p className='hover:bg-blue-950 hover:text-white  border-black-100 mx-auto max-w-max px-8 py-3 mt-10 text-3xl text-indigo-400 hover:border-indigo-400 border-2 shadow-md hover:shadow-2xl rounded-md tracking-wide flex flex-row gap-1 justify-center items-center'>
-          <a className="hover:cursor-pointer" target='_blank' href='https://devroy.hashnode.dev/'>VIEW MY PROJECTS</a>
-          <IoNavigateCircleOutline  />
+      <Cover text='I love to build and tinker'/>
+      <p className='hover:bg-blue-950 hover:text-white  border-black-100 mx-auto max-w-max px-8 py-3 mt-10 text-3xl text-indigo-400 hover:border-indigo-400 border-2 shadow-md hover:shadow-2xl  rounded-3xl tracking-wide  justify-center items-center'>
+        <Link href='/projects' className="hover:cursor-pointer">
+          <span>VIEW MY PROJECTS
+          {/* <IoNavigateCircleOutline  /> */}
+          </span>
+        </Link>
+          {/* <a  target='_blank' href='https://devroy.hashnode.dev/'>VIEW MY PROJECTS</a> */}
       </p>
     <div className="h-[30rem] rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
       <InfiniteMovingCards

@@ -1,9 +1,22 @@
 'use client'
-import React from 'react'
+import React, { useRef } from 'react'
 import { Spotlight } from './ui/Spotlight'
 import Image from 'next/image';
+import Socials from './Socials';
 
 const Hero = () => {
+  const greetingRef = useRef<HTMLHeadingElement>(null);
+
+  const handleMouseEnter = () => {
+    if(greetingRef.current) 
+        greetingRef.current.textContent = 'Nice to meet you!';
+  }
+
+  const handleMouseLeave = () => {
+    if(greetingRef.current) 
+        greetingRef.current.textContent = 'Yoroshiku onegaishimasu!';
+  }
+
   return (
     <div className='h-screen w-full flex justify-center align-middle items-center py-10 px-15'>
         <div>
@@ -26,16 +39,21 @@ const Hero = () => {
                   />
               </div>
               <div className='max-w-[70vw] sm:w-full text-center'>
-                <h2 className='uppercase tracking-widest sm:text-sm  text-gray-400'>Yoroshiku onegaishimasu!</h2>
-                <p className='text-5xl md:text-7xl text-amber-300 mt-5 font-semibold'> <span></span> I am Shweta.</p>
+                <h2 ref={greetingRef} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className='uppercase hover:cursor-default tracking-widest sm:text-sm text-gray-400'>Yoroshiku onegaishimasu!</h2>
+                <p className='text-5xl md:text-7xl text-amber-300 mt-5 font-semibold cursor-default'> <span>Hello!</span> I am Shweta.</p>
                 <p className='text-gray-300 mt-5 md:text-md text-2xl'>I am a full-stack developer with a primary focus on frontend development. I am driven by the passion to create
-                  <span className='font-semibold text-indigo-500'> pixel-perfect</span>, <span className='font-semibold text-indigo-500'> user obssessed</span> and 
-                  <span className='font-semibold text-indigo-500'> high quality</span> web applications.
+                  <span className='font-semibold text-indigo-500  bg-opacity-20 hover:bg-blue-950 px-2 py-0.25 rounded-sm hover:text-amber-300 hover:cursor-default justify-center'>pixel-perfect</span>, <span className='font-semibold  bg-opacity-20 text-indigo-500 hover:bg-blue-950 px-2 py-0.25 rounded-sm hover:text-amber-300 hover:cursor-default justify-center'>user obssessed</span>and 
+                  <span className='font-semibold text-indigo-500  bg-opacity-20 hover:bg-blue-950 px-2 py-0.25 rounded-sm hover:text-amber-300 hover:cursor-default justify-center'>high quality</span>web applications.
                 </p>
+
               </div>
             </div>
 
+
+
           </div>
+
+
     </div>
   )
 }
