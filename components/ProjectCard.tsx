@@ -1,6 +1,5 @@
 
 import { ProjectInfo } from '@/app/projects/page'
-import Image from 'next/image';
 import React from 'react'
 import { IoNavigateCircleOutline } from 'react-icons/io5';
 
@@ -8,7 +7,7 @@ import { IoNavigateCircleOutline } from 'react-icons/io5';
 
 const ProjectCard = ({num, data}:{num:number,data: ProjectInfo}) => {
 
-    const {title, description, projectLink, deployedLink, coverImage, status, tags} = data;
+    const {title, description, projectLink, deployedLink, status, tags} = data;
 
   return (
     <div className='bg-blue-950 w-full bg-opacity-10 px-10 py-5 rounded-lg group hover:shadow-indigo-400/[0.1] hover:border-indigo-400/[0.1] hover:shadow-md border border-black-100'>

@@ -1,5 +1,4 @@
 import React from 'react'
-import Cover from './Cover'
 import { SocialMediaProfiles, socials } from '@/data/socials'
 
 const Socials = () => {
