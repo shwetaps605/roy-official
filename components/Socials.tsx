@@ -1,40 +1,23 @@
 import React from 'react'
-
-export type SocialMediaLinks = {
-    [key: string]: string
-}
+import Cover from './Cover'
+import { SocialMediaProfiles, socials } from '@/data/socials'
 
 const Socials = () => {
-
-    const socialMediaLinks: SocialMediaLinks = {
-        github: 'https://github.com/shwetaps605',
-        linkedin: 'https://www.linkedin.com/in/shweta-roy/',
-        twitter: 'https://x.com/0xshwetaroy',
-        instagram: '',
-        peerlist: 'https://peerlist.io/shwetaroy',
-        email: 'shwetaroy@gmail.com',
-        hashnode: 'https://devroy.hashnode.dev/',
-        dribble: 'https://dribbble.com/shwetaroy',
-        goodreads: 'https://www.goodreads.com/user/show/169854640-shweta-roy'
-    }
-
-    // const getIcons = (key: string) => {
-
-    // }
-
-
+    const socialsData: SocialMediaProfiles[] = socials;
   return (
-    <div>
-        <ul>
-            {Object.keys(socialMediaLinks).map((key) => (
-            <li key={key}>
-                <a href={socialMediaLinks[key]} target="_blank" rel="noreferrer">
-                {key}
-                </a>
-            </li>
-            ))}
-        </ul>
-    </div>
+        <div className='relative w-full flex flex-row gap-10 justify-center items-center'>
+            {
+                socialsData.map(social => (
+                    <div key={social.platform} className=' text-gray-300 hover:text-amber-300'>
+                        <a href={social.url} target='_blank'>
+                            <div>
+                                {social.icon}
+                            </div>
+                        </a>
+                    </div>
+                ))
+            }
+        </div>
   )
 }
 

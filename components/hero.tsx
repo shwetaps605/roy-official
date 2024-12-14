@@ -2,6 +2,7 @@
 import React, { useRef } from 'react'
 import { Spotlight } from './ui/Spotlight'
 import Image from 'next/image';
+import Socials from './Socials';
 
 const Hero = () => {
   const greetingRef = useRef<HTMLHeadingElement>(null);
@@ -44,10 +45,15 @@ const Hero = () => {
                   <span className='font-semibold text-indigo-500  bg-opacity-20 hover:bg-blue-950 px-2 py-0.25 rounded-sm hover:text-amber-300 hover:cursor-default justify-center'>pixel-perfect</span>, <span className='font-semibold  bg-opacity-20 text-indigo-500 hover:bg-blue-950 px-2 py-0.25 rounded-sm hover:text-amber-300 hover:cursor-default justify-center'>user obssessed</span>and 
                   <span className='font-semibold text-indigo-500  bg-opacity-20 hover:bg-blue-950 px-2 py-0.25 rounded-sm hover:text-amber-300 hover:cursor-default justify-center'>high quality</span>web applications.
                 </p>
+
               </div>
             </div>
 
+
+
           </div>
+
+
     </div>
   )
 }
