@@ -1,6 +1,7 @@
 import React from 'react'
 import { InfiniteMovingCards } from './ui/infinite-moving-cards';
 import { IoNavigateCircleOutline } from 'react-icons/io5';
+import Cover from './Cover';
 
 const Projects = () => {
   const testimonials = [
@@ -27,8 +28,8 @@ const Projects = () => {
   ];
   return (
     <div className='my-[20rem] text-center mx-auto'>
-      <h1 className='text-amber-300 text-7xl'>I love to build and tinker.</h1>
-      <p className='hover:bg-blue-950 hover:text-white  border-black-100 mx-auto max-w-max px-8 py-3 mt-10 text-3xl text-indigo-400 hover:border-indigo-400 border-2 shadow-md hover:shadow-2xl rounded-md tracking-wide flex flex-row gap-1 justify-center items-center'>
+      <Cover text='I love to build and tinker'/>
+      <p className='hover:bg-blue-950 hover:text-white  border-black-100 mx-auto max-w-max px-8 py-3 mt-10 text-3xl text-indigo-400 hover:border-indigo-400 border-2 shadow-md hover:shadow-2xl  rounded-3xl tracking-wide flex flex-row gap-1 justify-center items-center'>
           <a className="hover:cursor-pointer" target='_blank' href='https://devroy.hashnode.dev/'>VIEW MY PROJECTS</a>
           <IoNavigateCircleOutline  />
       </p>

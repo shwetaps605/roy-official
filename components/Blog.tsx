@@ -2,6 +2,7 @@
 import React from 'react'
 import { IoNavigateCircleOutline } from 'react-icons/io5'
 import Card from './Card'
+import Cover from './Cover'
 
 export type Post = {
   title: string,
@@ -33,8 +34,8 @@ const Blog = () => {
   ]
   return (
     <div className='my-[20rem] h-full justify-center text-center mx-auto'>
-        <h1 className='text-amber-300 text-7xl'>I love to write about tech.</h1>
-        <p className='hover:bg-blue-950 hover:text-white  border-black-100 mx-auto max-w-max px-8 py-3 mt-10 text-3xl text-indigo-400 hover:border-indigo-400 border-2 shadow-md hover:shadow-2xl rounded-md tracking-wide flex flex-row gap-1 justify-center items-center'>
+        <Cover text='I love to write about tech'/>
+        <p className='hover:bg-blue-950  hover:text-white  border-black-100 mx-auto max-w-max px-8 py-3 mt-10 text-3xl text-indigo-400 hover:border-indigo-400 border-2 shadow-md hover:shadow-2xl rounded-3xl tracking-wide flex flex-row gap-1 justify-center items-center'>
             <a className="hover:cursor-pointer" target='_blank' href='https://devroy.hashnode.dev/'>VIEW MY BLOG</a>
             <IoNavigateCircleOutline  />
         </p>
